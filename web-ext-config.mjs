@@ -1,3 +1,3 @@
 export default {
-  ignoreFiles: ['store', 'dist', 'scripts', 'README.md', 'web-ext-config.mjs'],
+  ignoreFiles: ['pipeline', 'store', 'dist', 'scripts', 'README.md', 'web-ext-config.mjs'],
 };

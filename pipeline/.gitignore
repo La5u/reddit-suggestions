@@ -1,0 +1,4 @@
+work/
+out/
+test/fake.zst
+*.zst

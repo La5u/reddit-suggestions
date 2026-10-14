@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Converts subreddit-related output into the extension's data files.
-//   node scripts/import-data.js ../subreddit-related/out
+// Converts pipeline output into the extension's data files.
+//   node scripts/import-data.js pipeline/out
 //
 // Writes data/00.txt .. data/ff.txt: 256 shards picked by a hash of the
 // lowercase subreddit name, so each lookup loads one ~100 KB file. Each line

@@ -3,7 +3,7 @@
 Browser extension that shows related communities on subreddit pages.
 All the data ships with the extension, so it makes no network requests.
 
-Related lists come from a separate script, subreddit-related, which
+Related lists come from [`pipeline/`](pipeline), which
 scores subreddits by their shared commenters in one month of Reddit comments.
 
 ## Install (development)
@@ -47,6 +47,6 @@ the other browser's store warns about. Store screenshots (1280×800) are in
 ## Updating the data
 
 ```sh
-cd ../subreddit-related && ./run.sh RC_YYYY-MM.zst
-cd ../reddit-suggestions && node scripts/import-data.js ../subreddit-related/out
+pipeline/run.sh RC_YYYY-MM.zst
+node scripts/import-data.js pipeline/out
 ```
