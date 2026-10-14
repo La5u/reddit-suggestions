@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      :root { color-scheme: light dark; }
+      body { font: 14px/1.4 system-ui, sans-serif; margin: 12px 14px; min-width: 230px; }
+      label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+      fieldset { border: 0; margin: 10px 0 0; padding: 0; }
+      fieldset:disabled { opacity: 0.5; }
+      legend { font-size: 12px; opacity: 0.7; padding: 0; margin-bottom: 4px; }
+      fieldset label { margin: 2px 0; }
+      p { margin: 10px 0 0; font-size: 12px; opacity: 0.7; }
+    </style>
+  </head>
+  <body>
+    <label><input type="checkbox" id="enabled" /> Show related communities</label>
+    <fieldset id="position">
+      <legend>Position</legend>
+      <label><input type="radio" name="position" value="top" /> Top of sidebar</label>
+      <label><input type="radio" name="position" value="bottom" /> Bottom of sidebar</label>
+      <label><input type="radio" name="position" value="floating" /> Floating, bottom-right</label>
+    </fieldset>
+    <p id="meta"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>
