@@ -50,3 +50,7 @@ the other browser's store warns about. Store screenshots (1280×800) are in
 pipeline/run.sh RC_YYYY-MM.zst
 node scripts/import-data.js pipeline/out
 ```
+
+## License
+
+MIT
